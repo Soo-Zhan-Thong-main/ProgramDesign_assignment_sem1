@@ -1,6 +1,12 @@
 #include<stdio.h>
 #include<ctype.h>
 
+void addevent(){
+    char eventname[1000];
+    printf("Please write the event's name: ")
+    scanf("%s", eventname);
+}
+
 int main(){
 
     printf("Welcome to Event Management program!");
@@ -21,7 +27,7 @@ int main(){
     agreement = tolower(agreement);
     
     switch(agreement){
-        case 'a':
+        case 'a': addevent();
         break;
         case 'e':
         break;
