@@ -1,17 +1,22 @@
 #include<stdio.h>
 #include<ctype.h>
 
-void addevent(){
-    char eventname[1000];
-    printf("Please write the event's name: ")
-    scanf("%s", eventname);
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+char* addevent(){
+    char* eventname[1000];
+    printf("%s", "Please write the event's name: ");
+    scanf("%s", eventname[]);
+    printf("%s", "\nPlease write the event's date: ");
+    scanf()
+
+    return ;
 }
 
 int main(){
 
     printf("Welcome to Event Management program!");
-    
-    int numofevent;
+
     char agreement;
     
     printf("\n\nDo you want manage an event?");
@@ -45,3 +50,4 @@ int main(){
 
 return 0;
 }
+#pragma clang diagnostic pop
